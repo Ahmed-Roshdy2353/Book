@@ -1,0 +1,217 @@
+/*----------------------------------------------- ( Start body ) -----------------------------------------*/
+ /* التعديل هنا يكون تأثيره علي كامل الصفحه  */
+ body{
+    /*background-color: black;/* تغيير لون خلفية الصفحه للون الاسود */
+    background-image: url(../IMG/photo-1581781439406-63634953f4c7.jpg);/*  تحديد مكان الصوره */
+    background-repeat: no-repeat;/* لضمان عدم تكرار الصوره  */
+    background-size: cover;/* لضمان ان الصوره تغطي كامل الصفحه  */
+    background-position: center;/* لضمان ان الصوره في منتصف الصفحه  */
+    background-attachment: fixed;/*  لتثبيت الصوره كخلفيه للموقع عند التمرير بالماوس */
+    color: rgb(255, 255, 255);/* تغيير لون النص للابيض في كامل الصفحه ما لم يتم تغيير لون عنصر محدد  */
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+
+   }
+/*----------------------------------------------- ( End   body ) ----------------------------------------*/
+
+
+/*----------------------------------------------- ( Start  bar ) ----------------------------------------*/
+ /* اول شريط عنوان في الصفحه  */
+ nav {
+    border: 7px double rgba(255, 255, 255, 0.466);/* /اضافة اطار خارجي له الخائص التاليه /عرض/ /شكل/ /لون */
+    background-color:rgba(0, 0, 0, 0.904) ;
+    width: 97%; /*  عرض الشريط */
+    height: 100px;/* ارتفاع الشريط  */
+    position: fixed;/* لجعل الشريط عائم  */
+    box-shadow: 0px 0px 10px 0px rgb(255, 255, 255);
+    border-radius: 18px;
+      /* 
+       1. مكان العنصر العائم يكون من بداية الصفحه 
+       2. يجب تحديد مكان العنصر لانه عائم و لم يتعرف المتصفح علي مكان ثابت له 
+       3. ينتج عن عدم تحديد مكان العنصر تداخل للعناصر مثل 
+          1. ظهور العناصر التاليه للعنصر تحت هذا العنصر 
+          2. margin-top:; يتحرك العنصر للاسفل مع العنصر الذي يليه عند وضع خائص له مثل
+       4. بين العنصرين المتتاليين لكن هذا الحل ليس الافضل <br> او <hr> يمكن حل المشكله عن طريق اضافة  
+       5. الافضل تحديد مكان اجباري للعنصر  لضمان عدم التداخل و ثباته في هذا المكان 
+       6. وجعل العناصر التاليه تظهر تحته عند التمرير بالماوس 
+      */ 
+    top: 20px;/* تحديد مكان اجباري للشريط  من اعلي الصفحه بمقدار 0  */
+      /* لجعل الشريط في منتصف الصفحه  
+       1. قمت بابعاد الشريط من اليسار بحيث ان تكون بداية الشريط هي منتصف الصفحه 
+       2. قمت بتحريك الشريط من مكان بدايته الي اليسار مره اخري هذه المره الجزء المتحرك من الشريط هو منتصفه
+      */
+    left:50%;/*  تحديد مكان اجباري للشريط من اليسار وهنا يكون بداية الشريط في منتصف الصفحه   */
+    transform: translateX(-50%); /*  لجعل الشريط يتحرك من مكان بدايته لليسار بمقدار نصف عرض الشريط  */
+  }
+ /*-------------------------------------------- ( Star paragraph ) -------------------------------------*/
+   /* Star Word NoteBook */
+   nav p{
+      text-align: center; 
+      font-size: 35px;
+      letter-spacing: 8px;
+      font-weight: bold;
+      color: black;
+      text-shadow: 0px 0px 4px  rgb(255, 196, 0) ,1px 0px 3px  rgb(255, 196, 0),2px 0px 3px  rgba(255, 238, 0, 0.781) ;
+    } 
+   /* End Word NoteBook */
+ /*-------------------------------------------- ( End paragraph ) -------------------------------------*/
+
+/*----------------------------------------------- ( End       bar ) ---------------------------------*/
+
+/*----------------------------------------------- ( Start    Main ) -------------------------------*/
+ main{
+    margin-top: 150px;
+    width: 95%;
+    padding: 0px 35px;
+    /* position: relative; */
+  }
+  /* main h2{
+    color: black;
+    text-shadow: 0px 0px 4px  rgb(9, 255, 0) ,1px 0px 1px  rgba(9, 255, 0, 0.788),2px 0px 2px  rgba(9, 255, 0, 0.733) ;
+  } */
+  /*-------------------------------------------- ( Start paragraph text ) --------------------------*/
+   #P1{
+    display: inline-block;
+    margin:0px 19px;
+    letter-spacing:2px;
+   }
+  /*-------------------------------------------- ( End  paragraph  text ) ----------------------------*/
+
+  /*-------------------------------------------- ( Start    HTML   List ) ------------------------------*/
+   /* القائمة المنسدله*/
+    .HTML,.CSS,.JavaScript{
+      /* position: relative; */
+      display: inline-block;
+    }
+   /* HTML زر  */
+    .HTML button,.CSS button,.JavaScript button{
+      padding: 7px ;
+      border: 1px solid white;;
+      cursor: pointer;
+      font-size: 18px;
+      border-radius: 15px;
+      margin-bottom: 5px;
+      letter-spacing: 3px;
+      width: 180px;
+    }
+    .HTML button{
+      background-color: orangered;
+      color: black;
+    }
+    .CSS button{
+      background-color: blue;
+      color: black;
+    }
+    .JavaScript button{
+      background-color: yellow;
+      color: black;
+    }
+   /*  خيارات الزر عند الوقوف عليه بالمؤشر */
+    .HTML button:hover,.CSS button:hover,.JavaScript button:hover{
+      background-color: black;
+      color: white;
+      font-weight: bold;
+    }
+    .HTML button:hover{
+      border: 1px solid orangered;
+    }
+    .CSS button:hover{
+      border: 1px solid blue;
+    }
+    .JavaScript button:hover{
+      border: 1px solid yellow;
+    }
+   /* اخفاء الروابط في القائمه المنسدلة */
+    .HTML-A,.CSS-A,.JavaScript-A{
+      display: none;
+      position: absolute;
+    }
+   /*  الروابط داخل القائمة */
+    .HTML-A a,.CSS-A a,.JavaScript-A a {
+      padding: 7px;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      width: 166px;
+      border-radius: 15px;
+      margin-bottom: 3px;
+      letter-spacing: 3px;
+    }
+   /*  خيارات الرابط عند الوقوف عليه بالمؤشر  */
+    .HTML-A a:hover{
+      margin-inline-start: -30px;
+      font-weight: lighter;
+    }
+    .CSS-A a:hover{
+      color:blue;
+    }
+    .JavaScript-A a:hover{
+      margin-inline-start:30px ;
+    }
+
+   /*  خيارات الرابط في حالة عدم زيارته  */
+    .HTML-A a:link{
+      background-color: black;
+      color:white;
+      border: 1px solid orangered;
+      font-weight: normal;
+    }
+    .CSS-A a:link{
+      background-color: black;
+      color: white;
+      border: 1px solid blue;
+      font-weight: normal;
+    }
+    .JavaScript-A a:link{
+      background-color: black;
+      color: white;
+      border: 1px solid yellow;
+      font-weight: normal;
+    }
+   /*  خيارات الرابط في حالة زيارته  */
+
+    .HTML-A a:visited{
+      background-color: black;
+      color: orangered;
+      border: 2px solid orangered;
+    }
+    .CSS-A a:visited{
+      background-color: black;
+      color: blue;
+      border: 2px solid blue;
+    }
+    .JavaScript-A a:visited{
+      background-color: black;
+      color: yellow;
+      border: 2px solid yellow;
+    }
+
+    /* عرض الخيارات عند الوقوف بالمؤشر */
+    .HTML:hover .HTML-A,.CSS:hover .CSS-A,.JavaScript:hover .JavaScript-A{
+      display: block;
+    }
+  /*-------------------------------------------- ( End     HTML    List ) ------------------------------*/
+    #P2,.P3{
+      margin:0px 19px;
+    }
+  .P3 a{
+    text-decoration: none;
+    color: yellow;
+  }
+  .P3 a span{
+    color:red;
+  }
+/*----------------------------------------------- ( End    Main ) ----------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+/*   */

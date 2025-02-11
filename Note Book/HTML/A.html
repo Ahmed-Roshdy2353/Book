@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A</title>
+    <link rel="stylesheet" href="../CSS/A.css">
+</head>
+<body>
+    <nav>
+        <p>A</p>
+      </nav>
+      <main>
+        <!-- <div id="first">
+        &lt; a href ="العنوان الذي تريد الذهاب اليه"   
+    </div>
+        <div id="scend">
+        &gt;   النص الذي يظهر علي الشاشه  &lt; /a &gt;
+    </div> -->
+        <a href="Note Book-Home.html" target="_blank" id="Home"><img src="../IMG/images-home.png" alt=""></a>
+     <!-----------------------------------------------------------------(1)------------------------------------------------------->
+        <h1>     HTML في  <code>&lt;a&gt;</code>  شرح عنصر  </h1>
+        <p>     لأنه يُستخدم في انشاء الروابط  التي تتيح  للمستخدمين التنقل بين الصفحات المختلفة أو داخل نفس الصفحة أو حتى للوصول إلى مستندات وملفات  HTML  أحد أهم عناصر   <code>&lt;a&gt;</code>  يُعتبر عنصر   </p>
+        <h2>   <code>&lt;a&gt;</code>  أهم السمات الخاصة بعنصر   </h2>
+        <h3> ( <code>href</code> ) -:1</h3>
+        <p>  : تستخدم هذه السمة لتحديد وجهة الرابط و يمكن أن تكون الوجهة كالتالي </p>
+        <ul>
+            <li> . ( <code>https://Google.com</code> )  رابط خارجي مثل </li>
+            <li> . ( ../../HTML/Note Book.html ) ( Note Book.html ) رابط داخلي مثل  </li>
+            <li> . ( <code>section like (id) (#name )</code>)  مرجع داخلي في نفس الصفحة </li>
+            <li> . ( <code>mailto:ahmedxxxxxxxxxxxxx@gmail.com</code> )  رابط بريد إلكتروني مثل  </li>
+            <li> . ( <code>tel:+02010xxxxxxxx</code> ) رابط هاتفي مثل  </li>
+        </ul>
+        <div class="code">
+            &lt;a href="https://Google.com"&gt; زيارة موقع خارجي &lt;/a&gt;
+        </div>
+     <!--------------------------------------------------------------------(2)---------------------------------------------------->
+        <h3> ( <code>target</code> ) -:2</h3>
+        <p>تُحدد هذه السمة كيفية فتح الرابط </p>
+        <ul>
+            <li> . يفتح الرابط في نفس علامة التبويب ( <code>_self</code> ) </li>
+            <li> . يفتح الرابط في علامة تبويب جديدة ( <code>_blank</code> ) </li>
+            <li> . يفتح الرابط في الإطار الأب ( <code>_parent</code> ) </li>
+            <li> . يفتح الرابط في الإطار الأعلى ( <code>_top</code> ) </li>
+        </ul>
+        <div class="code">
+            &lt;a href="https://Google.com" target="_blank"&gt;فتح في صفحة جديده &lt;/a&gt;
+        </div>
+        <!-------------------------------------------------------------------(3)---------------------------------------------------->
+        <h3>  ( <code>rel</code> ) -:3</h3>
+        <p>تُستخدم لتحديد العلاقة بين الصفحة الحالية والصفحة الهدف القيم الشائعة</p>
+        <ul>
+            <li> . تمنع الصفحة المفتوحة من الوصول إلى الصفحة الأصلية (لتحسين الأمان) ( <code>noopener</code> ) </li>
+            <li> . تمنع إرسال أي معلومات من الصفحة الأصلية إلى الصفحة الهدف ( <code>noreferrer</code> ) </li>
+            <li> . تُخبر محركات البحث بعدم تتبع هذا الرابط ( <code>nofollow</code> ) </li>
+        </ul>
+        <div class="code">
+            &lt;a href="https://Google.com" target="_blank" rel="noopener noreferrer"&gt;رابط آمن &lt;/a&gt;
+        </div>
+        <!----------------------------------------------------------------------(4)------------------------------------------------->
+        <h3> ( <code>title</code> ) -:4</h3>
+        <p>تُظهر نصًا توضيحيًا عند تمرير مؤشر الفأرة فوق الرابط</p>
+        <div class="code">
+            &lt;a href="https://Google.com" title="هذا رابط إلى موقع Example"&gt;رابط مع عنوان &lt;/a&gt;
+        </div>
+        <!-----------------------------------------------------------------------(5)----------------------------------------------->
+        <h3> ( <code>download</code> ) -:5</h3>
+        <p>تسمح بتنزيل الملف بدلاً من فتحه مباشرة. يمكن أيضًا تحديد اسم الملف</p>
+        <a href="../IMG/Home-design-sketch-name.png" download target="_blank" >download</a>
+        <div class="code">
+            &lt;a href="file.pdf" download="myFile.pdf"&gt;تحميل ملف PDF&lt;/a&gt;
+        </div>
+        <!------------------------------------------------------------------------(6)--------------------------------------------->
+        <h3> ( <code>hreflang</code> ) -:6</h3>
+        <p>تُحدد لغة المحتوى المستهدف</p>
+        <div class="code">
+            &lt;a href="https://Google.com" hreflang="en"&gt;رابط لمحتوى باللغة الإنجليزية&lt;/a&gt;
+        </div>
+        <!----------------------------------------------------------------------(example)------------------------------------------>
+        <h2>أمثلة عملية</h2>
+        
+        <h3>رابط داخلي لنفس الصفحة</h3>
+        <div class="code">
+            &lt;a href="#section2"&gt;انتقل إلى القسم الثاني&lt;/a&gt;
+    
+            &lt;h2 id="section2"&gt;القسم الثاني&lt;/h2&gt;
+        </div>
+    
+        <h3>رابط إلى بريد إلكتروني</h3>
+        <div class="code">
+            &lt;a href="ahmedxxxxxxxxxxxxx@gmail.com"&gt;راسلنا عبر البريد الإلكتروني&lt;/a&gt;
+        </div>
+    
+        <h3>رابط إلى رقم هاتف</h3>
+        <div class="code">
+            &lt;a href="tel:+02010xxxxxxxx"&gt;اتصل بنا&lt;/a&gt;
+        </div>
+    
+        <h3>مثال شامل</h3>
+        <div class="code">
+            &lt;a href="https://Google.com" target="_blank" rel="noopener noreferrer" 
+            title="  وصف الرابط و يظهر عند مرور مؤشر الماوس علي الرابط"
+            &gt;النص الذي يظهر في الصفحة&lt;/a&gt;
+        </div>
+
+        <h2> شرح حالات الرابط الداخلي </h2>
+           <p> اولا يجب تحديد الملف الاساسي ثم تحديد الملف المستهدف  </p>
+           <p> ثانيا نحدد اتجاه الحركه وعدد الحركات</p>
+           <ul>
+            <li> الملفات موجوده في نفس المجلد </li>
+            <li> href:"file name.extension" </li>
+            <br>
+            <li> الملفات موجوده داخل مجلد بجوار الملف الاساسي </li>
+            <li>   href:"/folder name/file name.extension" </li>
+            <li>   href:"/folder name/folder name/file name.extension" </li>
+            <br>
+            <li> الملفات موجوده داخل مجلد لكن هذا المجلد خارج مجلدالملف الاساسي او بجواره </li>
+            <li>  href:"../folder name/file name.extension" </li>
+            <li>  href:"../../file name.extension" </li>
+            <br>
+           </ul>
+        
+</body>
+</html>

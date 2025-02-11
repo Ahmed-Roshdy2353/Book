@@ -1,0 +1,126 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css-Tags</title>
+    <link rel="stylesheet" href="../CSS/Css-Tags.css">
+</head>
+<body>
+    <nav>
+        <p>Css-Tags</p>
+      </nav>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جدول شامل لجميع وسوم CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h2 {
+            margin-top: 20px;
+            color: #333;
+        }
+        table {
+            width: 95%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>جدول شامل لجميع وسوم CSS</h2>
+
+    <table>
+        <tr>
+            <th>الوسم</th>
+            <th>الوصف</th>
+        </tr>
+
+        <!-- وسوم النصوص -->
+        <tr><td>color</td><td>تحديد لون النص.</td></tr>
+        <tr><td>font-size</td><td>تحديد حجم الخط.</td></tr>
+        <tr><td>font-weight</td><td>تحديد سماكة الخط (عادي، غامق).</td></tr>
+        <tr><td>text-align</td><td>محاذاة النص (يمين، يسار، وسط).</td></tr>
+        <tr><td>text-decoration</td><td>إضافة تأثيرات على النص مثل التسطير.</td></tr>
+
+        <!-- وسوم الخلفيات -->
+        <tr><td>background</td><td>خاصية مختصرة لتنسيق الخلفية.</td></tr>
+        <tr><td>background-color</td><td>لون الخلفية.</td></tr>
+        <tr><td>background-image</td><td>وضع صورة كخلفية.</td></tr>
+        <tr><td>background-position</td><td>تحديد موضع الصورة.</td></tr>
+        <tr><td>background-repeat</td><td>تحديد تكرار الخلفية.</td></tr>
+        <tr><td>background-size</td><td>تحديد حجم الخلفية.</td></tr>
+        <tr><td>background-attachment</td><td>تحديد ما إذا كانت الخلفية ثابتة أو تتحرك.</td></tr>
+
+        <!-- وسوم الحدود والزوايا -->
+        <tr><td>border</td><td>تحديد الحدود حول العنصر.</td></tr>
+        <tr><td>border-radius</td><td>تحديد تدوير زوايا العنصر.</td></tr>
+        <tr><td>border-top-left-radius</td><td>تدوير الزاوية العلوية اليسرى.</td></tr>
+        <tr><td>border-top-right-radius</td><td>تدوير الزاوية العلوية اليمنى.</td></tr>
+        <tr><td>border-bottom-right-radius</td><td>تدوير الزاوية السفلية اليمنى.</td></tr>
+        <tr><td>border-bottom-left-radius</td><td>تدوير الزاوية السفلية اليسرى.</td></tr>
+
+        <!-- وسوم التخطيط -->
+        <tr><td>margin</td><td>تحديد الهوامش الخارجية.</td></tr>
+        <tr><td>padding</td><td>تحديد الهوامش الداخلية.</td></tr>
+        <tr><td>width</td><td>تحديد عرض العنصر.</td></tr>
+        <tr><td>height</td><td>تحديد ارتفاع العنصر.</td></tr>
+        <tr><td>display</td><td>تحديد طريقة عرض العنصر (block, inline).</td></tr>
+        <tr><td>float</td><td>محاذاة العنصر (يمين، يسار).</td></tr>
+        <tr><td>position</td><td>تحديد موضع العنصر (static, absolute, relative, fixed).</td></tr>
+
+        <!-- وسوم المؤثرات البصرية -->
+        <tr><td>opacity</td><td>تحديد شفافية العنصر.</td></tr>
+        <tr><td>box-shadow</td><td>إضافة ظل حول العنصر.</td></tr>
+        <tr><td>outline</td><td>إضافة حدود خارجية للعنصر دون التأثير على حجمه.</td></tr>
+        <tr><td>visibility</td><td>إظهار أو إخفاء العنصر (visible, hidden).</td></tr>
+
+        <!-- وسوم الرسوم المتحركة -->
+        <tr><td>@keyframes</td><td>إنشاء رسوم متحركة مخصصة.</td></tr>
+        <tr><td>animation</td><td>تحديد إعدادات الرسوم المتحركة.</td></tr>
+        <tr><td>animation-name</td><td>ربط العنصر بحركة معينة.</td></tr>
+        <tr><td>animation-duration</td><td>تحديد مدة تشغيل الرسوم المتحركة.</td></tr>
+        <tr><td>animation-timing-function</td><td>تحديد نوع التوقيت (ease, linear).</td></tr>
+        <tr><td>animation-iteration-count</td><td>عدد مرات تكرار الرسوم المتحركة.</td></tr>
+
+        <!-- وسوم التفاعل -->
+        <tr><td>cursor</td><td>تحديد شكل المؤشر عند تمرير الماوس.</td></tr>
+        <tr><td>pointer-events</td><td>تحديد ما إذا كان العنصر يمكن التفاعل معه.</td></tr>
+        <tr><td>appearance</td><td>تحديد مظهر العنصر حسب نظام التشغيل.</td></tr>
+
+    </table>
+
+</body>
+</html>
